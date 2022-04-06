@@ -18,7 +18,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
                            .passwordEncoder(passwordEncoder())
                            .withUser("admin")
                            .password(passwordEncoder().encode("admin"))
-                           .roles("ADMIN");
+                           .roles("USER");
                }
        @Override
       protected void configure(HttpSecurity http) throws Exception {
