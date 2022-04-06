@@ -3,6 +3,7 @@ package applicazioneProdottiRest.avvisoRest;
 
 import applicazioneProdottiRest.avviso.ProdottoNonTrovato;
 import applicazioneProdottiRest.modello.Prodotti;
+import applicazioneProdottiRest.repository.ProdottiRepository;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVRecord;
 import org.slf4j.Logger;
@@ -11,7 +12,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-import repository.ProdottiRepository;
+
 
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -21,7 +22,7 @@ import java.util.List;
 
 @RestController
    public class ProdottoRestController {
-       private ProdottiRepository repository;
+       private final ProdottiRepository repository;
 
                ProdottoRestController(ProdottiRepository repository) {
                    this.repository = repository;
@@ -106,7 +107,7 @@ import java.util.List;
              }
        @PostMapping("/prodotti/csv")
        public ResponseEntity<String> caricaCSV(@RequestParam("fileProdotti") MultipartFile file) {
-                   Reader in = null;
+                   Reader in;
                   try {
                            in = new InputStreamReader(file.getInputStream());
               // Iterable<CSVRecord> records = CSVFormat.DEFAULT.parse(in);
