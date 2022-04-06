@@ -1,4 +1,4 @@
-package repository;
+package applicazioneProdottiRest.repository;
 
 import applicazioneProdottiRest.modello.Prodotti;
 import org.springframework.data.jpa.repository.JpaRepository;
