@@ -1,4 +1,4 @@
-package avviso;
+package applicazioneProdottiRest.avviso;
 
 public class ProdottoNonTrovato extends RuntimeException{
         public ProdottoNonTrovato(Long id) {

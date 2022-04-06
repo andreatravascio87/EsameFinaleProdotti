@@ -1,6 +1,6 @@
-package configurazione;
+package applicazioneProdottiRest.configurazione;
 
-import modello.Prodotti;
+import applicazioneProdottiRest.modello.Prodotti;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;

@@ -1,8 +1,8 @@
-package avvisoRest;
+package applicazioneProdottiRest.avvisoRest;
 
 
-import avviso.ProdottoNonTrovato;
-import modello.Prodotti;
+import applicazioneProdottiRest.avviso.ProdottoNonTrovato;
+import applicazioneProdottiRest.modello.Prodotti;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVRecord;
 import org.slf4j.Logger;

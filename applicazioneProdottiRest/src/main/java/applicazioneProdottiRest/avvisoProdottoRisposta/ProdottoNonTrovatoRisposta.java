@@ -1,7 +1,7 @@
-package avvisoProdottoRisposta;
+package applicazioneProdottiRest.avvisoProdottoRisposta;
 
 
-    import avviso.ProdottoNonTrovato;
+    import applicazioneProdottiRest.avviso.ProdottoNonTrovato;
     import org.springframework.http.HttpStatus;
     import org.springframework.web.bind.annotation.ControllerAdvice;
     import org.springframework.web.bind.annotation.ExceptionHandler;

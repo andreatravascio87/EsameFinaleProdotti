@@ -1,6 +1,6 @@
 package repository;
 
-import modello.Prodotti;
+import applicazioneProdottiRest.modello.Prodotti;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Date;

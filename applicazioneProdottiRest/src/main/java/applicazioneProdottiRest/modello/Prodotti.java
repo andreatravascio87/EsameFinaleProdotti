@@ -1,4 +1,4 @@
-package modello;
+package applicazioneProdottiRest.modello;
 
 import javax.persistence.*;
 import java.util.Date;
