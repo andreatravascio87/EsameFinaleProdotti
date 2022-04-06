@@ -12,7 +12,6 @@ import java.util.Date;
         private float prezzo;
         private float ranking;
 
-               @Temporal(TemporalType.DATE)
        private String dataAcquisto;
 
     public Prodotti(String nome, float prezzo, float ranking, String dataAcquisto) {
@@ -24,6 +23,9 @@ import java.util.Date;
 
     public Prodotti(String nome, Date date, float prezzo, String dataAcquisto) {
 
+    }
+
+    public Prodotti() {
     }
 
     public Long getId() {
