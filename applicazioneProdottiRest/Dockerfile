@@ -1,5 +1,5 @@
 FROM adoptopenjdk:11-jre-hotspot
-LABEL maintainer="dev lecce"
+LABEL maintainer="Andrea 100"
 LABEL version="0.0.1"
 LABEL description="user rest api"
 RUN apt update && apt install tzdata -y
